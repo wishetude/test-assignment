@@ -2,7 +2,7 @@
  * Copyright (c) 2014, NTUU KPI, Computer systems department and/or its affiliates. All rights reserved.
  * NTUU KPI PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  *
- * Author: Каленіченко Варвара Андріївна, Група: ІС-33, № заліковки: 7
+ *
  */
 
 package ua.kpi.comsys.test2.implementation;
@@ -24,20 +24,18 @@ import java.util.NoSuchElementException;
 import ua.kpi.comsys.test2.NumberList;
 
 /**
- * Реалізація списку для зберігання чисел у вісімковій системі числення.
- * Кожен елемент списку містить одну цифру (0-7).
- *
- * Параметри варіанту:
- * - C3 = 7 mod 3 = 1 -> Кільцевий однонаправлений список
- * - C5 = 7 mod 5 = 2 -> Вісімкова система (цифри 0-7)
- * - C7 = 7 mod 7 = 0 -> Операція додавання
- * - Додаткова система: (2+1) mod 5 = 3 -> Десяткова
+ * Кільцевий однонаправлений список
+ * Вісімкова система 
+ * Операція додавання
+ * Додаткова система: Десяткова
  *
  * @author Каленіченко Варвара Андріївна
+ * Група: ІС-33
+ * Варіант: 7
  */
 public class NumberListImpl implements NumberList {
 
-    private static final int DEFAULT_BASE = 8; // вісімкова система (для варіанту 7)
+    private static final int DEFAULT_BASE = 8; // вісімкова система 
     private static final int ALTERNATIVE_BASE = 10; // десяткова система
 
     private final int base; // система числення для цього списку
